@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Alex Smith</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            width: 100%;
+            height: 2500px;
+        }
+
+        /* #HEADER SECTION */
+
+        .head {
+            width: 20%;
+            height: 2500px;
+            background-color: black;
+            position: relative;
+        }
+
+        .head-img {
+            width: 120px;
+            height: 120px;
+            background-image: url(profile-img.jpg);
+            position: absolute;
+            top: 40px;
+            left: 70px;
+            border-radius: 1000px;
+            border: 15px solid rgb(48, 54, 61);
+            background-size: cover;
+            transition: transform 2s;
+        }
+
+        /* #IMAGE HOVER */
+
+        .head-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* #NAME */
+
+        .name {
+            position: absolute;
+            top: 210px;
+            left: 73.5px;
+        }
+
+        .head-name {
+            color: white;
+            font-size: 30px;
+            transition: transform 1.5s;
+        }
+
+        /* #NAME HOVER */
+
+        .head-name:hover {
+            transform: translateX(20px);
+        }
+
+        /* #ICONS */
+
+        .icons {
+            width: 75%;
+            height: 40px;
+            /* background-color: yellow; */
+            position: absolute;
+            top: 260px;
+            left: 35px;
+        }
+
+        .icon1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 500px;
+            background-color: rgb(48, 54, 61);
+            transition: all 1s;
+        }
+
+        .icon2 {
+            width: 40px;
+            height: 40px;
+            border-radius: 500px;
+            background-color: rgb(48, 54, 61);
+            position: absolute;
+            left: 45px;
+            top: 0px;
+            transition: all 1s;
+        }
+
+        .icon3 {
+            width: 40px;
+            height: 40px;
+            border-radius: 500px;
+            background-color: rgb(48, 54, 61);
+            position: absolute;
+            left: 90px;
+            top: 0px;
+            transition: all 1s;
+        }
+
+        .icon4 {
+            width: 40px;
+            height: 40px;
+            border-radius: 500px;
+            background-color: rgb(48, 54, 61);
+            position: absolute;
+            left: 135px;
+            top: 0px;
+            transition: all 1s;
+        }
+
+        .icon5 {
+            width: 40px;
+            height: 40px;
+            border-radius: 500px;
+            background-color: rgb(48, 54, 61);
+            position: absolute;
+            left: 180px;
+            top: 0px;
+            transition: all 1s;
+        }
+
+        /* #ICON HOVER */
+
+        .icon1:hover {
+            background-color: grey;
+            transform: scale(1.1);
+        }
+
+        .icon2:hover {
+            background-color: grey;
+            transform: scale(1.1);
+        }
+
+        .icon3:hover {
+            background-color: grey;
+            transform: scale(1.1);
+        }
+
+        .icon4:hover {
+            background-color: grey;
+            transform: scale(1.1);
+        }
+
+        .icon5:hover {
+            background-color: grey;
+            transform: scale(1.1);
+        }
+
+        /* #NAVIGATION BAR */
+
+        .navbar {
+            width: 50%;
+            height: 420px;
+            position: absolute;
+            top: 340px;
+            left: 40px;
+            /* background-color: yellow; */
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* background-color: yellow; */
+
+        }
+
+        .nav1 {
+            float: none;
+            display: block;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 22px;
+            transition: transform 1s;
+        }
+
+        .nav1 a {
+            color: grey;
+            text-decoration: none;
+        }
+
+        .nav1 a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav1:hover {
+            color: white;
+            text-decoration: none;
+            transform: scale(1.1);
+            /* transform: translateX(20px); */
+        }
+
+        /* MAIN SECTION */
+
+        .whole {
+            width: 80%;
+            height: 900px;
+            position: absolute;
+            left: 20%;
+            top: 0;
+            /* background-color: rgb(48, 54, 61); */
+        }
+
+        /* 1st SECTION HOME*/
+
+        .sec1 {
+            width: 100%;
+            height: 690px;
+            background-image: url(hero-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* #FOR IMAGE OPACITY */
+
+        .sec1-op {
+            width: 100%;
+            height: 690px;
+            background-color: rgb(48, 54, 61);
+            opacity: 0.3;
+        }
+
+        /* #1ST SECTION TEXT */
+
+        .home-h1 {
+            font-size: 70px;
+            color: white;
+            position: absolute;
+            top: 225px;
+            left: 300px;
+            transition: all 1s;
+        }
+
+        .home-h1:hover {
+            color: black;
+        }
+
+        .home-p1 {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            top: 310px;
+            left: 310px;
+            transition: all 1s;
+        }
+
+        .home-p1:hover {
+            color: black;
+        }
+
+        /* #2ND SECTION ABOUT*/
+
+        .sec2 {
+            width: 100%;
+            height: 700px;
+            background-color: silver;
+            padding-top: 40px;
+            padding-left: 60px;
+            box-sizing: border-box;
+        }
+
+        .about {
+            width: 100%;
+            height: 600px;
+            /* background-color: teal; */
+            position: relative;
+
+        }
+
+        /* #TEXT SECTION ABOUT */
+
+        .about-t {
+            width: 100%;
+            height: 150px;
+            /* background-color: green; */
+        }
+
+        .about-h1 {
+            color: darkblue;
+            transition: transform 1s;
+        }
+
+        .about-h1:hover {
+            transform: translateX(15px);
+        }
+
+        .a-line {
+            color: rgb(63, 136, 182);
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        .about-p1 {
+            color: black;
+            line-height: 25px;
+        }
+
+        /* #ABOUT IMAGE */
+
+        .about-img {
+            width: 40%;
+            height: 450px;
+            background-image: url(profile-img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* #ABOUT UI/UX */
+
+        .about-uiux {
+            width: 60%;
+            height: 90px;
+            /* background-color: limegreen; */
+            position: absolute;
+            left: 40%;
+            top: 180px;
+        }
+
+        .uiux-h1 {
+            color: darkblue;
+            font-size: 22px;
+            position: absolute;
+            left: 10px;
+        }
+
+        .uiux-p1 {
+            color: black;
+            line-height: 25px;
+            position: absolute;
+            left: 12px;
+            top: 30px;
+        }
+
+        /* #ABOUT BULLETS */
+
+        .bullets {
+            width: 60%;
+            height: 180px;
+            /* background-color: red; */
+            position: absolute;
+            left: 40%;
+            top: 270px;
+        }
+
+        .bullets1 {
+            width: 45%;
+            height: 180px;
+            position: absolute;
+        }
+
+        .ul-b1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .b1 {
+            float: none;
+            display: block;
+            color: white;
+            text-align: left;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 1s;
+        }
+
+        .b1 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .b1 a:hover {
+            color: rgb(48, 54, 61);
+            text-decoration: none;
+        }
+
+        .b1:hover {
+            color: rgb(48, 54, 61);
+            text-decoration: none;
+            /* transform: scale(1.1); */
+            transform: translateX(20px);
+        }
+
+        .bullets2 {
+            width: 45%;
+            height: 180px;
+            position: absolute;
+            left: 50%;
+        }
+
+        .ul-b2 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .b2 {
+            float: none;
+            display: block;
+            color: white;
+            text-align: left;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 1s;
+        }
+
+        .b2 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .b2 a:hover {
+            color: rgb(48, 54, 61);
+            text-decoration: none;
+        }
+
+        .b2:hover {
+            color: rgb(48, 54, 61);
+            text-decoration: none;
+            /* transform: scale(1.1); */
+            transform: translateX(20px);
+        }
+
+        /* #ABOUT LAST PARAGRAPH */
+
+        .about-lp {
+            width: 60%;
+            height: 120px;
+            position: absolute;
+            left: 40%;
+            top: 450px;
+            /* background-color: yellow; */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .about-p2 {
+            color: black;
+            line-height: 25px;
+        }
+
+        /* #3RD SECTION FACTS */
+
+        .sec3 {
+            width: 100%;
+            height: 500px;
+            background-color: silver;
+            position: relative;
+        }
+
+        /* #TEXT SECTION ABOUT */
+
+        .facts-t {
+            width: 94%;
+            height: 150px;
+            background-color: silver;
+            position: absolute;
+            left: 60px;
+            top: 40px;
+        }
+
+        .facts-h1 {
+            color: darkblue;
+            transition: transform 1s;
+        }
+
+        .facts-h1:hover {
+            transform: translate(15px);
+        }
+
+        .f-line {
+            color: rgb(63, 136, 182);
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        .facts-p1 {
+            color: black;
+            line-height: 25px;
+        }
+
+        /* #Skill Data */
+
+        .num {
+            width: 100%;
+            height: 250px;
+            /* background-color: burlywood; */
+            position: absolute;
+            top: 200px;
+        }
+
+        .hc {
+            width: 25%;
+            height: 250px;
+            /* background-color: yellow; */
+            position: relative;
+            transition: transform 1s;
+        }
+
+        .hc-h1 {
+            font-size: 70px;
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        }
+
+        .hc-p1 {
+            font-size: 20px;
+            position: absolute;
+            top: 130px;
+            left: 70px;
+        }
+
+        .hc-p2 {
+            font-size: 16px;
+            position: absolute;
+            top: 160px;
+            left: 70px;
+            color: rgb(110, 109, 109);
+        }
+
+
+        .proj {
+            width: 25%;
+            height: 250px;
+            /* background-color: green; */
+            position: absolute;
+            left: 25%;
+            top: 0;
+            transition: transform 1s;
+
+        }
+
+        .proj-h1 {
+            font-size: 70px;
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        }
+
+        .proj-p1 {
+            font-size: 20px;
+            position: absolute;
+            top: 130px;
+            left: 70px;
+        }
+
+
+        .hs {
+            width: 25%;
+            height: 250px;
+            /* background-color: blue; */
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transition: transform 1s;
+
+        }
+
+        .hs-h1 {
+            font-size: 70px;
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        }
+
+        .hs-p1 {
+            font-size: 20px;
+            position: absolute;
+            top: 130px;
+            left: 70px;
+        }
+
+        .hw {
+            width: 25%;
+            height: 250px;
+            /* background-color: purple; */
+            position: absolute;
+            left: 75%;
+            top: 0;
+            transition: transform 1s;
+
+        }
+
+        .hw-h1 {
+            font-size: 70px;
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        }
+
+        .hw-p1 {
+            font-size: 20px;
+            position: absolute;
+            top: 130px;
+            left: 70px;
+        }
+
+        /* #SKILL DATA HOVER */
+
+        .hc:hover {
+            transform: translateY(-20px);
+        }
+
+        .proj:hover {
+            transform: translateY(-20px);
+        }
+
+        .hs:hover {
+            transform: translateY(-20px);
+        }
+
+        .hw:hover {
+            transform: translateY(-20px);
+        }
+
+
+        /* #4TH SECTION SKILLS*/
+
+        .sec4 {
+            width: 100%;
+            height: 610px;
+            background-color: rgb(173, 181, 192);
+            position: relative;
+        }
+
+        /* #TEXT SECTION SKILLS */
+
+        .skills-t {
+            width: 94%;
+            height: 150px;
+            background-color: rgb(173, 181, 192);
+            /* background-color: steelblue; */
+            position: absolute;
+            left: 60px;
+            top: 40px;
+        }
+
+        .skills-h1 {
+            color: darkblue;
+            transition: transform 1s;
+        }
+
+        .skills-h1:hover {
+            transform: translate(15px);
+        }
+
+        .s-line {
+            color: rgb(63, 136, 182);
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        .skills-p1 {
+            color: black;
+            line-height: 25px;
+        }
+
+        /* #STATS SECTION */
+
+        .stats {
+            width: 99.9%;
+            height: 400px;
+            /* background-color: springgreen; */
+            position: relative;
+            top: 190px;
+        }
+
+        .stats1 {
+            width: 45%;
+            height: 400px;
+            /* background-color: tomato; */
+            position: absolute;
+            left: 40px;
+        }
+
+        /* #HTML */
+
+        .html {
+            width: 90%;
+            height: 70px;
+            /* background-color: blue; */
+            position: relative;
+            left: 40px;
+
+        }
+
+        .html1 {
+            position: absolute;
+            top: 30px;
+        }
+
+        .html2 {
+            position: absolute;
+            top: 30px;
+            left: 410px;
+        }
+
+        .html-stats {
+            position: absolute;
+            width: 85%;
+            height: 20px;
+            background-color: rgb(63, 136, 182);
+            top: 50px;
+        }
+
+        /* #CSS */
+
+        .css {
+            width: 90%;
+            height: 70px;
+            /* background-color: teal; */
+            position: relative;
+            left: 40px;
+
+        }
+
+        .css1 {
+            position: absolute;
+            top: 30px;
+        }
+
+        .css2 {
+            position: absolute;
+            top: 30px;
+            left: 410px;
+        }
+
+        .css-stats {
+            position: relative;
+            width: 85%;
+            height: 20px;
+            /* background-color: rgb(63, 136, 182); */
+            top: 50px;
+        }
+
+        .css-s1 {
+            width: 90%;
+            height: 20px;
+            background-color: rgb(63, 136, 182);
+        }
+
+        .css-s2 {
+            width: 10%;
+            height: 20px;
+            background-color: silver;
+            position: absolute;
+            left: 90%;
+            top: 0;
+        }
+
+        /* #JAVASCRIPT */
+
+        .js {
+            width: 90%;
+            height: 70px;
+            /* background-color: teal; */
+            position: relative;
+            left: 40px;
+
+        }
+
+        .js1 {
+            position: absolute;
+            top: 30px;
+        }
+
+        .js2 {
+            position: absolute;
+            top: 30px;
+            left: 410px;
+        }
+
+        .js-stats {
+            position: relative;
+            width: 85%;
+            height: 20px;
+            /* background-color: rgb(63, 136, 182); */
+            top: 50px;
+        }
+
+        .js-s1 {
+            width: 75%;
+            height: 20px;
+            background-color: rgb(63, 136, 182);
+        }
+
+        .js-s2 {
+            width: 25%;
+            height: 20px;
+            background-color: silver;
+            position: absolute;
+            left: 75%;
+            top: 0;
+        }
+
+        /* #STATS2 */
+
+        .stats2 {
+            width: 45%;
+            height: 400px;
+            /* background-color: tomato; */
+            position: absolute;
+            left: 53%;
+            top: 0px;
+
+        }
+
+        /* #HTML */
+
+        .html {
+            width: 90%;
+            height: 70px;
+            /* background-color: blue; */
+            position: relative;
+            left: 40px;
+
+        }
+
+        .html1 {
+            position: absolute;
+            top: 30px;
+        }
+
+        .html2 {
+            position: absolute;
+            top: 30px;
+            left: 410px;
+        }
+
+        .html-stats {
+            position: absolute;
+            width: 85%;
+            height: 20px;
+            background-color: rgb(63, 136, 182);
+            top: 50px;
+        }
+
+        /* #CSS */
+
+        .css {
+            width: 90%;
+            height: 70px;
+            /* background-color: teal; */
+            position: relative;
+            left: 40px;
+
+        }
+
+        .css1 {
+            position: absolute;
+            top: 30px;
+        }
+
+        .css2 {
+            position: absolute;
+            top: 30px;
+            left: 410px;
+        }
+
+        .css-stats {
+            position: relative;
+            width: 85%;
+            height: 20px;
+            /* background-color: rgb(63, 136, 182); */
+            top: 50px;
+        }
+
+        .css-s1 {
+            width: 90%;
+            height: 20px;
+            background-color: rgb(63, 136, 182);
+        }
+
+        .css-s2 {
+            width: 10%;
+            height: 20px;
+            background-color: silver;
+            position: absolute;
+            left: 90%;
+            top: 0;
+        }
+
+        /* #JAVASCRIPT */
+
+        .js {
+            width: 90%;
+            height: 70px;
+            /* background-color: teal; */
+            position: relative;
+            left: 40px;
+
+        }
+
+        .js1 {
+            position: absolute;
+            top: 30px;
+        }
+
+        .js2 {
+            position: absolute;
+            top: 30px;
+            left: 410px;
+        }
+
+        .js-stats {
+            position: relative;
+            width: 85%;
+            height: 20px;
+            /* background-color: rgb(63, 136, 182); */
+            top: 50px;
+        }
+
+        .js-s1 {
+            width: 75%;
+            height: 20px;
+            background-color: rgb(63, 136, 182);
+        }
+
+        .js-s2 {
+            width: 25%;
+            height: 20px;
+            background-color: silver;
+            position: absolute;
+            left: 75%;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="head-img"></div>
+            <div class="name">
+                <h1 class="head-name">Alex Smith</h1>
+            </div>
+            <div class="icons">
+                <div class="icon1"></div>
+                <div class="icon2"></div>
+                <div class="icon3"></div>
+                <div class="icon4"></div>
+                <div class="icon5"></div>
+            </div>
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="nav1"><a href="#home">Home</a></li>
+                    <li class="nav1"><a href="#about">About</a></li>
+                    <li class="nav1"><a href="#resume">Resume</a></li>
+                    <li class="nav1"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav1"><a href="#services">Services</a></li>
+                    <li class="nav1"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="whole">
+            <div class="sec1">
+                <div class="sec1-op"></div>
+                <h1 class="home-h1">Alex Smith</h1>
+                <p class="home-p1">I'm Designer |</p>
+            </div>
+
+            <div class="sec2">
+                <div class="about">
+                    <div class="about-t">
+                        <h1 class="about-h1">About</h1>
+                        <p class="a-line"><b>______</b></p>
+                        <p class="about-p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Officiis omnis aspernatur excepturi asperiores maiores, adipisci delectus,
+                            perspiciatis maxime neque libero tenetur modi natus!
+                            Repudiandae perferendis consectetur nostrum nisi dolores.</p>
+                    </div>
+                    <div class="about-img"></div>
+                    <div class="about-uiux">
+                        <h1 class="uiux-h1">UI/UX Designer & Web Developer.</h1>
+                        <p class="uiux-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Ducimus magni magnam autem nisi, ex facere?</p>
+                    </div>
+                    <div class="bullets">
+                        <div class="bullets1">
+                            <ul class="ul-b1">
+                                <li class="b1"><a class="b1"><b>Birthday:</b> 1 May 1995</a></li>
+                                <li class="b1"><a class="b1"><b>Website:</b> www.example.com</a></li>
+                                <li class="b1"><a class="b1"><b>Phone:</b> +123 456 7890</a></li>
+                                <li class="b1"><a class="b1"><b>City:</b> New York, USA</a></li>
+                            </ul>
+                        </div>
+                        <div class="bullets2">
+                            <ul class="ul-b2">
+                                <li class="b2"><a class="b2"><b>Age:</b> 30</a></li>
+                                <li class="b2"><a class="b2"><b>Degree:</b> Master</a></li>
+                                <li class="b2"><a class="b2"><b>Email:</b> email@example.com</a></li>
+                                <li class="b2"><a class="b2"><b>City:</b> New York, USA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-lp">
+                        <p class="about-p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, quidem
+                            accusantium voluptatem
+                            harum aperiam quisquam expedita neque id, commodi adipisci fugit amet aut ex sunt quia
+                            voluptas facere excepturi?
+                            Consequatur amet eos voluptatem reiciendis deleniti, nemo officia molestiae rerum
+                            distinctio?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec3">
+                <div class="facts">
+                    <div class="facts-t">
+                        <h1 class="facts-h1">Facts</h1>
+                        <p class="f-line"><b>______</b></p>
+                        <p class="facts-p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Officiis omnis aspernatur excepturi asperiores maiores, adipisci delectus,
+                            perspiciatis maxime neque libero tenetur modi natus!
+                            Repudiandae perferendis consectetur nostrum nisi dolores.</p>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="hc">
+                        <h1 class="hc-h1">232</h1>
+                        <p class="hc-p1"><b>Happy Clients</b></p>
+                        <p class="hc-p2">Lorem, ipsum.</p>
+                    </div>
+                    <div class="proj">
+                        <h1 class="proj-h1">521</h1>
+                        <p class="proj-p1"><b>Projects</b> <span style="color: rgb(110, 109, 109); font-size: 16px;">
+                                Lorem ipsum dolor sit amet.</span></p>
+                    </div>
+                    <div class="hs">
+                        <h1 class="hs-h1">1453</h1>
+                        <p class="hs-p1"><b>Hours of Support</b><span
+                                style="color: rgb(110, 109, 109); font-size: 16px;"> Lorem ipsum dolor.</span></p>
+                    </div>
+                    <div class="hw">
+                        <h1 class="hw-h1">32</h1>
+                        <p class="hw-p1"><b>Hard Workers</b><span style="color: rgb(110, 109, 109); font-size: 16px;">
+                                Lorem ipsum dolor.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec4">
+                <div class="skills">
+                    <div class="skills-t">
+                        <h1 class="skills-h1">Skills</h1>
+                        <p class="s-line"><b>______</b></p>
+                        <p class="skills-p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Officiis omnis aspernatur excepturi asperiores maiores, adipisci delectus,
+                            perspiciatis maxime neque libero tenetur modi natus!
+                            Repudiandae perferendis consectetur nostrum nisi dolores.</p>
+                    </div>
+
+                </div>
+                <div class="stats">
+                    <div class="stats1">
+                        <div class="html">
+                            <p class="html1"><b>HTML</b></p>
+                            <p class="html2"><b>100%</b></p>
+                            <div class="html-stats"></div>
+                        </div>
+                        <div class="css">
+                            <p class="css1"><b>CSS</b></p>
+                            <p class="css2"><b>90%</b></p>
+                            <div class="css-stats">
+                                <div class="css-s1"></div>
+                                <div class="css-s2"></div>
+                            </div>
+                        </div>
+                        <div class="js">
+                            <p class="js1"><b>JAVASCRIPT</b></p>
+                            <p class="js2"><b>90%</b></p>
+                            <div class="js-stats">
+                                <div class="js-s1"></div>
+                                <div class="js-s2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats2">
+                        <div class="html">
+                            <p class="html1"><b>HTML</b></p>
+                            <p class="html2"><b>100%</b></p>
+                            <div class="html-stats"></div>
+                        </div>
+                        <div class="css">
+                            <p class="css1"><b>CSS</b></p>
+                            <p class="css2"><b>90%</b></p>
+                            <div class="css-stats">
+                                <div class="css-s1"></div>
+                                <div class="css-s2"></div>
+                            </div>
+                        </div>
+                        <div class="js">
+                            <p class="js1"><b>JAVASCRIPT</b></p>
+                            <p class="js2"><b>90%</b></p>
+                            <div class="js-stats">
+                                <div class="js-s1"></div>
+                                <div class="js-s2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
